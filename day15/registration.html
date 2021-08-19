@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #ffffff;
+            margin: 0px;
+            font-family: 'Titillium', sans-serif;
+        }
+        .wrapper{
+            background-color: #2C394B;
+            width: 400px;
+            height: 225px;
+            padding:10px;
+            margin: 10px auto;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 7px 10px #082032;
+        }
+
+        form{
+           width: 100%;
+        }
+
+        div{
+            color: #FF4C29
+        }
+
+        h1{
+            color: #FF4C29
+        }
+        .register{
+            background-color: #082032;
+            color: #FF4C29;
+            float: left;
+            margin-top: 10px;
+            
+        }
+        .register:hover{
+            background-color: #334756;
+            color: #fff;
+            transition: 500ms;
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Registration Form</h1>
+
+    <form name="userForm" method="post" onsubmit="onSubmit(event)" action="">
+
+        <div>
+         <label for="">Username</label>
+            <input class="input" type="text" placeholder="Enter username" name="" id="username">
+        </div>
+
+        <div>
+            <label for="">Email</label>
+            <input class="input" type="text" placeholder="Enter email" name="" id="email">
+        </div>
+
+        <div>
+            <label for="">Password</label>
+            <input class="input" type="text" placeholder="Enter password" name="" id="password">
+        </div>
+
+        <div>
+            <label for="">Confirm Password</label>
+            <input class="input" type="text" placeholder="Confirm password" name="" id="confirm">
+        </div>
+
+        <div>
+            <input class="register" type="submit" value="Register">
+
+        </div>
+
+    </form>
+</div>
+
+    <script>
+
+        function onSubmit(event){
+            event.preventDefault()
+
+            var name = document.userForm.username.value;
+            var email = document.userForm.email.value;
+            var password = document.userForm.password.value;
+            var confirmPassword = document.userForm.confirm.value;
+
+            if(name == null || name == "" ){
+                alert('You must enter a username to create an account')
+
+            }else  if(email == null || email == ""){
+                alert('Please enter a valid email to create an account')
+
+            }else  if(password == null || password == "" ){
+                alert('You must enter and confirm a password to create an account')
+
+            }else if (confirmPassword == null || confirmPassword == "" || confirmPassword != password){
+                alert('Password do not match, please re-enter information')
+            }else{
+                alert('Account successfully created')
+            }
+            
+         }
+
+
+    </script>
+
+
+</body>
+</html>

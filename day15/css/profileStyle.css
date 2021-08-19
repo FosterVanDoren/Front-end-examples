@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,400&display=swap');
+
+body{
+    background-color: #fff;
+    margin: 0px;
+    font-family: 'Titillium', sans-serif;
+}
+
+img{
+    width: 100px;
+    border-radius: 100px;
+    border: 3px solid #ccc;
+    background-color: black;
+    float: right;
+   }
+
+   header{
+    width:95%;
+    background-color: #2C394B;
+    margin: 10px auto;
+    border-radius: 5px;
+    
+   }
+
+   h1{
+       width: 100%;
+       background-color: #2C394B;
+       color: #FF4C29;
+       border-radius: 5px;
+       box-shadow: 3px 5px #082032;
+       margin-left: 5px;
+
+   }
+   .indent{
+       margin-left: 10px;
+   }
+   p{
+       font-size: 20px;
+   }
+
+   section{
+       width: 80%;
+       float: left;
+   }
+   aside{
+       width: 10%;
+       float: left;
+       padding: 5px;
+       margin-left: 10px;
+       margin-right: 30px;
+       margin-top: 50px;
+       font-size: 18px;
+       background-color: #2C394B;
+       color: #FF4C29;
+       border-radius: 10px;
+       box-shadow: 5px 7px #082032;
+   }
+
+   table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+.p1{
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+tr{
+    border: 0px solid #c13d1c;
+  
+}
+td, th{
+
+    color: #FF4C29;
+    font-size: 25px;
+    padding: 5px;
+
+}   
+th{
+    background-color: #D7441F;
+   color: #082032; 
+}
+
+tr:nth-child(even){
+    background-color: #334756;
+}
+tr:nth-child(odd){
+    background-color:  #082032;
+}
+thead{
+    background-color: #D7441F;
+}
+
+tr:hover{
+    background-color: rgb(255, 142, 101);
+    transition: 300ms;
+    color: black;
+}
